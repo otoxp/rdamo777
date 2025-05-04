@@ -1,0 +1,315 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rádio Web Amorim</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f5f0;
+    }
+    header {
+      background-color: #00144E;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .whatsapp-link {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .whatsapp-link:hover {
+      background-color: #128C7E;
+    }
+    main {
+      padding: 20px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-content: center; /* Centraliza o conteúdo horizontalmente */
+      align-items: center; /* Centraliza o conteúdo verticalmente */
+      text-align: center; /* Centraliza o texto dentro das divs .radio */
+    }
+    .radio {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden; /* Para que as imagens não ultrapassem o container */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza o conteúdo verticalmente */
+      text-align: center; /* Centraliza o texto dentro das divs .radio */
+    }
+    .radio-logo {
+      width: 150px; /* Ajuste o tamanho conforme necessário */
+      height: 150px; /* Ajuste o tamanho conforme necessário */
+      border-radius: 50%; /* Isso transforma a imagem em um círculo */
+      object-fit: cover; /* Isso garante que a imagem cubra todo o círculo */
+    }
+    .radio-content {
+      padding: 20px;
+    }
+    h3 {
+      margin-top: 0;
+      color: #253746;
+    }
+    p {
+      margin-bottom: 0;
+      color: #777;
+    }
+    audio {
+      width: 100%;
+      margin-top: 15px;
+    }
+    footer {
+      background-color: #00144E;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    /* Consulta de mídia para dispositivos com largura de tela menor que 600px (celulares) */
+    @media screen and (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+      header img {
+        margin-bottom: 10px;
+      }
+    }
+
+    /* Consulta de mídia para dispositivos com largura de tela entre 600px e 1024px (tablets) */
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="https://img.freepik.com/vetores-gratis/fundo-do-por-do-sol-tropical-desenhado-a-mao_23-2150673465.jpg?w=740&t=st=1715179496~exp=1715180096~hmac=d1dbe45e4ab86478766a3a6a84e04144599b4bbe954c957aad1e9bee5c458f71" alt="Sua Foto">
+      <h1>Rádio PIRAIBA (<a class="instagram-link" href="https://www.instagram.com/carloamorim10/" target="_blank">@carloamorim10</a>)</h1>
+    
+    
+    </div>
+    <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=83991396563" target="_blank">Contato WhatsApp</a>
+  </header>
+  <main>
+    <div class="grid-container">
+      <!-- Conteúdo das rádios -->
+      
+<div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/md/radio42685_1580493375.jpg" alt="Logo da Rádio ">  
+  <h3>Cocais FM</h3>
+  <p>Musicas</p>
+    <audio controls>
+        <source src="https://is.gd/cocais100" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/md/radio34271_1522779435.jpg" alt="Logo da Rádio 2">
+      <h3>Arapuan FM</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://tinyurl.com/rdpuan111" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/md/radio13286_1481549538.png" alt="Logo da Rádio 3">
+      <h3>Gazeta FM SP</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://shout25.crossradio.com.br:18002/stream?1671278502652" type="audio/mpeg">
+      </audio>
+    </div>
+<div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio13955_1532353280.png" alt="Logo da Rádio 3">
+      <h3>Mix FM SP</h3>
+    <p>Musica</p>
+      <audio controls>
+        <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_SAOPAULOAAC.aac" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="radio">
+  <img class="radio-logo" src="https://tinyurl.com/ysfjntf9" alt="Logo da Rádio ">
+      <h3>Tempo FM </h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="http://tinyurl.com/3u87cnyv" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/md/radio39030_1470682338.jpg" alt="Logo da Rádio ">
+      <h3>Anos 60 e 70</h3>
+    <p>Musicas </p>
+      <audio controls>
+        <source src="https://tinyurl.com/studio7fm" type="audio/mpeg">
+      </audio>
+  </div>
+  <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/md/radio14215_1562877228.jpg" alt="Logo da Rádio ">
+      <h3>Tupi RJ</h3>
+    <p>Futebol</p>
+      <audio controls>
+        <source src="https://8923.brasilstream.com.br/stream?acc" type="audio/mpeg">
+      </audio>
+    </div>
+  <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/md/radio28672_1573683042.jpg" alt="Logo da Rádio ">
+      <h3>CBN SP</h3>
+    <p>Futebol</p>
+      <audio controls>
+        <source src="https://tinyurl.com/pp6jyruc" type="audio/mpeg">
+      </audio>
+  </div>
+  <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio9015_1555350246.png" alt="Logo da Rádio ">
+      <h3>Alpha FM</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALPHAFM_ADP.aac" type="audio/mpeg">
+      </audio>
+  </div>
+  <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio28362_1534769267.jpg" alt="Logo da Rádio ">
+      <h3>Motel FM</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://usa11.fastcast4u.com/proxy/radiomotel?mp=/stream3" type="audio/mpeg">
+      </audio>
+    </div>
+      <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio38812_1470245536.jpg" alt="Logo da Rádio ">
+      <h3>Roberto Carlos</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://centova5.transmissaodigital.com:20032/stream" type="audio/mpeg">
+      </audio>
+    </div>
+      <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio9505_1574106966.jpg" alt="Logo da Rádio ">
+      <h3>Antena 1</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://antenaone.crossradio.com.br/stream/1;" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio10563_1645009512.jpeg" alt="Logo da Rádio ">
+      <h3>Cabo Branco FM</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://servidor20.brlogic.com:7086/live" type="audio/mpeg">
+      </audio>
+    </div>  
+    <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/md/radio11218_1536087040.png" alt="Logo da Rádio ">
+      <h3>Caturite FM</h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://radio.saopaulo01.com.br:10976/stream/1/" type="audio/mpeg">
+      </audio>
+    </div>  
+      <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio71155_1578652784.jpeg" alt="Logo da Rádio ">
+      <h3> FM O Dia </h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://ssl1.transmissaodigital.com:2780/stream" type="audio/mpeg">
+      </audio>
+    </div>  
+    <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio13846_1602704790.jpg" alt="Logo da Rádio ">
+      <h3> Meio Norte FM </h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://webradio.amsolution.com.br/radio/8280/meionorte" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="radio">
+  <img class="radio-logo" src="https://img.radios.com.br/radio/lg/radio14275_1578515051.png" alt="Logo da Rádio ">
+      <h3>Transamerica RJ </h3>
+    <p>Musicas</p>
+      <audio controls>
+        <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/RT_RJAAC.aac" type="audio/mpeg">
+      </audio>
+    </div>  
+  <script>
+    // Obtém todos os elementos de áudio
+    const audios = document.querySelectorAll('audio');
+
+    // Adiciona um evento de clique em cada player de áudio
+    audios.forEach(audio => {
+      audio.addEventListener('play', event => {
+        // Pausa todos os outros players de áudio
+        audios.forEach(a => {
+          if (a !== audio) {
+            a.pause();
+          }
+        });
+      });
+    });
+  </script>
+  
+    <!-- Adicione mais divs "radio" conforme necessário -->
+<!-- Histats.com (div with counter) -->
+<div id="histats_counter"></div>
+<!-- Histats.com START (aync) -->
+<script type="text/javascript">
+  var _Hasync = _Hasync || [];
+  _Hasync.push(['Histats.start', '1,4819603,4,3,170,30,00011111']);
+  _Hasync.push(['Histats.fasi', '1']);
+  _Hasync.push(['Histats.track_hits', '']);
+  (function () {
+    var hs = document.createElement('script');
+    hs.type = 'text/javascript';
+    hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+  })();
+</script>
+<noscript>
+  <a href="/" target="_blank">
+    <img src="//sstatic1.histats.com/0.gif?4819603&101" alt="free web hit counter" border="0">
+  </a>
+</noscript>
+<!-- Histats.com END -->        
+
+      <!-- Adicione mais divs "radio" conforme necessário -->
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 Rádio Web Carlos Amorim. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
